@@ -1,11 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="webName">
+        <img class="webLogo" src="#" alt="weather_app_logo" />
+        <h2>Weather App</h2>
+      </div>
+      <div class="searchBox">
+        <input class="inputText" type="text" placeholder="Search Location" />
+        <button class="search">Search</button>
+      </div>
+    </header>
+    <div class="mainContent">
+      <!-- <div class="loading">Loading......</div> -->
+      <div class="container">
+        <div class="mainInfo">
+          <img class="weatherimage" width="150px" src="#" alt="temp_image" />
+          <div class="temperature"></div>
+          <div class="desc"></div>
+          <div class="city"></div>
+          <div class="feelsLike"></div>
+          <div class="country"></div>
+        </div>
+        <div class="otherInfo">
+          <div class="wind_title" id="title">Wind</div>
+          <div class="wind_op"></div>
+          <div class="humidity_title" id="title">Humidity</div>
+          <div class="humidity_op"></div>
+          <div class="windDirection_title" id="title">Wind Direction</div>
+          <div class="windDirection_op"></div>
+          <div class="UV_title" id="title">UV</div>
+          <div class="UV_op"></div>
+        </div>
+      </div>
+    </div>
+    <footer>&copy all rights reserved. Weather App 2024</footer>
+  </body>
 </html>
