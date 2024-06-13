@@ -3,7 +3,7 @@
 
 function importAll(r) {
   let images = {};
-  r.keys().map((item, index) => {
+  r.keys().map((item) => {
     images[item.replace("./", "")] = r(item);
   });
   return images;
@@ -11,7 +11,6 @@ function importAll(r) {
 
 const images = importAll(require.context("./assets", false, /\.(jpg)$/));
 function displayData(data) {
-  // const container=document.querySelector('.container');
   const weatherImage = document.querySelector(".weatherimage");
   const temperature = document.querySelector(".temperature");
   const humidity = document.querySelector(".humidity_op");
@@ -48,9 +47,6 @@ function displayData(data) {
   feelsLike.textContent = `Feels Like: 
   ${data.current.feelslike_c}°C`;
   country.textContent = `${data.location.region} | ${data.location.country}`;
-  // const loadingDiv=document.querySelector('.loading')
-  // loadingDiv.classList.remove('active');
-  // container.classList.add('active')
 }
 
 export { displayData };
